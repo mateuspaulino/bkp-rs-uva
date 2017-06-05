@@ -1,14 +1,15 @@
 <div class="animated fadeIn" ng-controller="CurriculoCtrl">
     <div class="row">
         <div class="col-md-12">
+            <!-- Dados gerais -->
             <div class="card">
                 <div class="card-header">
-                    <strong>Incluir Curriculo</strong>
+                    <strong>Dados gerais</strong>
                 </div>
                 <div class="card-block">
                     <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
 
-                        <p><strong><em>Dados pessoais</em></strong></p>
+                        <!-- <p><strong><em>Dados pessoais</em></strong></p> -->
                         
                         <div class="form-group row">
                         
@@ -75,7 +76,7 @@
 	            		<div class="form-group row">
                             
                             <!-- Data de emissao -->
-                            <label class="col-md-1 form-control-label" for="curriculo-rg-emissao">Emiss&atilde;o</label>
+                            <label class="col-md-1 form-control-label" for="curriculo-rg-emissao">Data de emiss&atilde;o</label>
                             <div class="col-md-4">
                               <input type="text" id="curriculo-rg-emissao" name="curriculo-rg-emissao" class="form-control">
                             </div>
@@ -151,8 +152,144 @@
                             </div>                        
 	            		
 	            		</div>
+
+                        <div class="form-group row">
+    
+                            <!-- Municipio -->                          
+                            <label class="col-md-1 form-control-label" for="curriculo-telefone">Telefone</label>
+                            <div class="col-md-4">
+                                <input type="text" ng-model="telefone" id="curriculo-telefone" name="curriculo-telefone" class="form-control" placeholder="(21)xxxx-xxxx">
+                            </div>                          
+    
+                            <!-- UF -->                         
+                            <label class="col-md-1 form-control-label" for="curriculo-celular">Celular</label>
+                            <div class="col-md-6">
+                                <input type="text" ng-model="celular" id="curriculo-celular" name="curriculo-celular" class="form-control" placeholder="(21)9-xxxx-xxxx">
+                            </div>                        
+                        
+                        </div>
 	            		
 	            	</form>
+                        
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Confirmar</button>
+                    <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Cancelar</button>
+                </div>
+            </div>
+            <!-- Formação academica -->
+            <div class="card">
+                <div class="card-header">
+                    <strong>Formação acadêmica</strong>
+                </div>
+                <div class="card-block">
+                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+
+                        <div class="form-group row">
+                        
+                            <!-- E-mail -->
+                            <label class="col-md-1 form-control-label" for="curriculo-email">E-mail</label>
+                            <div class="col-md-4">
+                              <input type="text" id="curriculo-email" name="curriculo-email" class="form-control">
+                            </div>                        
+                        
+                            <!-- Senha -->
+                            
+                            <label class="col-md-1 form-control-label" for="curriculo-senha">Senha</label>
+                            <div class="col-md-2">
+                              <input type="password" id="curriculo-senha" name="curriculo-senha" class="form-control">
+                            </div>
+                            
+                        
+                            <!-- Repetir Senha-->
+                            <label class="col-md-2 form-control-label" for="curriculo-senha2">Repetir Senha</label>
+                            <div class="col-md-2">
+                              <input type="password" id="curriculo-senha2" name="curriculo-senha2" class="form-control">
+                            </div>                          
+                            
+                        </div>
+                        
+                    </form>
+                        
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Confirmar</button>
+                    <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Cancelar</button>
+                </div>
+            </div>
+            <!-- Formação complementar -->
+            <div class="card">
+                <div class="card-header">
+                    <strong>Formação complementar</strong>
+                </div>
+                <div class="card-block">
+                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+
+                        <div class="form-group row">
+                        
+                            <!-- E-mail -->
+                            <label class="col-md-1 form-control-label" for="curriculo-email">E-mail</label>
+                            <div class="col-md-4">
+                              <input type="text" id="curriculo-email" name="curriculo-email" class="form-control">
+                            </div>                        
+                        
+                            <!-- Senha -->
+                            
+                            <label class="col-md-1 form-control-label" for="curriculo-senha">Senha</label>
+                            <div class="col-md-2">
+                              <input type="password" id="curriculo-senha" name="curriculo-senha" class="form-control">
+                            </div>
+                            
+                        
+                            <!-- Repetir Senha-->
+                            <label class="col-md-2 form-control-label" for="curriculo-senha2">Repetir Senha</label>
+                            <div class="col-md-2">
+                              <input type="password" id="curriculo-senha2" name="curriculo-senha2" class="form-control">
+                            </div>                          
+                            
+                        </div>
+                        
+                    </form>
+                        
+                </div>
+                <div class="card-footer">
+                    <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-dot-circle-o"></i> Confirmar</button>
+                    <button type="reset" class="btn btn-sm btn-danger"><i class="fa fa-ban"></i> Cancelar</button>
+                </div>
+            </div>
+            <!-- Experiência profissional -->
+            <div class="card">
+                <div class="card-header">
+                    <strong>Experiência profissional</strong>
+                </div>
+                <div class="card-block">
+                    <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+
+                        <div class="form-group row">
+                        
+                            <!-- E-mail -->
+                            <label class="col-md-1 form-control-label" for="curriculo-email">E-mail</label>
+                            <div class="col-md-4">
+                              <input type="text" id="curriculo-email" name="curriculo-email" class="form-control">
+                            </div>                        
+                        
+                            <!-- Senha -->
+                            
+                            <label class="col-md-1 form-control-label" for="curriculo-senha">Senha</label>
+                            <div class="col-md-2">
+                              <input type="password" id="curriculo-senha" name="curriculo-senha" class="form-control">
+                            </div>
+                            
+                        
+                            <!-- Repetir Senha-->
+                            <label class="col-md-2 form-control-label" for="curriculo-senha2">Repetir Senha</label>
+                            <div class="col-md-2">
+                              <input type="password" id="curriculo-senha2" name="curriculo-senha2" class="form-control">
+                            </div>                          
+                            
+                        </div>
+                        
+                    </form>
                         
                 </div>
                 <div class="card-footer">
